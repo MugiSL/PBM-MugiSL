@@ -65,7 +65,7 @@
       <div class="container">
         <div class="judul">
           <h1 class="display-4">Belajar Online ? Ya MugiSL Class</h1>
-          <p class="lead">Bikin Percaya Diri Meraih prestasi</p>
+          <p class="lead"></p>
         </div>
       </div>
       <img class="gambar" src="image/index1.png " alt="ilustration" />
@@ -101,7 +101,7 @@
     <section class="tengah">
       <div class="top">
         <div id="satu" class="one">
-          <img src="image/Frame 5.png" alt="" />
+          <img src="image/Frame 5.png" alt=""  />
           <div class="one-kanan">
             <div class="box">
               <h2>Kenapa Menggunakan MugiSL <span>Class</span></h2>
@@ -117,7 +117,7 @@
               <p style="font-size: 24px">Kita menyediakan pembelajaran yang mudah di pahami oleh peserta didik.</p>
             </div>
           </div>
-          <img src="image/index2.png   " alt="" />
+          <img src="image/index2.png   " alt=""  />
         </div>
       </div>
       <div class="bottom" id="tiga">
@@ -161,5 +161,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 3, delay: 1.6, text: "Bikin Percaya Diri Meraih prestasi" });
+       gsap.from(".jumbotron img", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+       gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
   </body>
 </html>
